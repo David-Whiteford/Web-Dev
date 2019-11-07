@@ -3,16 +3,19 @@
 {% block body %}
 
 <p>
-Congratulations!  Your score is: {{ the_score }}.
+  	Your number choice  is: {{ the_score }}.
 </p>
 <form method="POST" action="/recordhighscore">
-
+	
 	<p>
-	Tell me your number: <input type="number" name="player_score">
+	    Tell me your number: <input type="number" name="player_score">
+	</p>
+	<p>
+		Tell me your name: <input type="text" name="player_name">
 	</p>
 	<!-- <input type="HIDDEN" name="score" value="{{ the_score }}"> Cant   DON'T DO THIS!!! -->
 	<p>
-	<input type="SUBMIT" value="Record number">
+	<input type="SUBMIT" value="Record number and name">
 	</p>
 
 </form>
