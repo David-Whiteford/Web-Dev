@@ -1,0 +1,16 @@
+
+{% extends "base.html" %}
+
+{% block body %}
+
+<p>
+  	Your number you choose  is: {{ the_playernum }}.
+</p>
+<form method="POST" action="/checknum">
+	<p>
+	<input type="SUBMIT" value="Go to number check">
+	</p>
+
+</form>
+
+{% endblock %}

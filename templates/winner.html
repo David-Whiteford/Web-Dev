@@ -1,14 +1,17 @@
 {% extends "base.html" %}
 
 {% block body %}
+<p>
+	The HightScore Table
+</p>
 
 <table>
 	<tr>
-		<th>Player Name</th><th>Score</th>
+		<th>Player Name</th><th>Number of guesses</th><th>Time Taken</th>
 	</tr>
 	{% for row in the_data[:10] %}
 		<tr>
-			<td>{{ row[1] }}</td><td>{{ row[0] }}</td>
+			<td>{{ row[0] }}</td><td>{{ row[1] }}</td><td>{{ row[2] }}</td>
 		</tr>
 	{% endfor %}
 </table>

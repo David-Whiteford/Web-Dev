@@ -3,12 +3,12 @@
 {% block body %}
 
 <p>
-  	Your number choice  is: {{ the_score }}.
+	Random num(temp): {{ the_score }}.
 </p>
-<form method="POST" action="/recordhighscore">
+<form method="POST" action="/rcordnumber">
 	
 	<p>
-	    Tell me your number: <input type="number" name="player_score">
+	    Tell me your number: <input type="number" name="player_num">
 	</p>
 	<p>
 		Tell me your name: <input type="text" name="player_name">
